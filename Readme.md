@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Медведева](https://up.htmlacademy.ru/htmlcss/30/user/907585).
-* Наставник: [Малик Киров](https://htmlacademy.ru/profile/id17217).
+* Наставник: [Малик](https://htmlacademy.ru/profile/id17217).
 
 ---
 
