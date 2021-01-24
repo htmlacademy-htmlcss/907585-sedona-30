@@ -27,7 +27,7 @@
     <section>
       <h2>О Седоне</h2>
       <img src="https://via.placeholder.com/150x100" alt="Добро пожаловать в Седону">
-      <p>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+      <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
     </section>
 
     <section>
@@ -48,17 +48,17 @@
             <li>
               <img src="https://via.placeholder.com/50x50" alt="Иконка дома">
               <h4>Жилье</h4>
-              <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li>
               <img src="https://via.placeholder.com/50x50" alt="Иконка еды">
               <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер<br>, вы не разочаруетесь!</p>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li>
               <img src="https://via.placeholder.com/50x50" alt="Иконка подарка">
               <h4>Сувениры</h4>
-              <p>Не только китайского, но и местного<br> производства!</p>
+              <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
@@ -67,25 +67,25 @@
             <img src="https://via.placeholder.com/150x100" alt="Мост Дьявола">
           </div>
           <div>
-            <h3>Там есть<br>Мост дьявола</h3>
+            <h3>Там есть Мост дьявола</h3>
             <p>№2</p>
-            <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
         <li>
           <h3>Небольшая площадь</h3>
           <p>№3</p>
-          <p>Все достопримечательности<br>находятся очень близко</p>
+          <p>Все достопримечательности находятся очень близко</p>
         </li>
         <li>
           <h3>Красивая дорога</h3>
           <p>№4</p>
-          <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li>
           <h3>Мало туристов</h3>
           <p>№5</p>
-          <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </section>
@@ -93,31 +93,33 @@
     <section>
       <h2>Поиск гостиницы</h2>
       <p>Заинтересовались?</p>
-      <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <div>
         <!-- Здесь будет карта -->
       </div>
       <button type="button">Поиск гостиницы в Седоне</button>
       <form action="https://echo.htmlacademy.ru" method="GET">
-        <label>
-          Дата заезда:
-          <input type="text" name="arrival_date" value="24 апреля 2017">
-        </label>
+        <div>
+          <label for="arrival_date">Дата заезда:</label>
+          <input id="arrival_date" type="text" name="arrival_date" value="24 апреля 2017">
+          <button type="button">Календарь</button>
+        </div>
 
-        <label>
-          Дата выезда:
-          <input type="text" name="depature_date" value="4 июля 2017">
-        </label>
+        <div>
+          <label for="depature_date">Дата выезда:</label>
+          <input id="depature_date" type="text" name="depature_date" value="4 июля 2017">
+          <button type="button">Календарь</button>
+        </div>
 
-        <label>
-          Взрослые:
-          <input type="number" name="adult" value="2">
-        </label>
+        <div>
+          <label for="adult">Взрослые:</label>
+          <input id="adult" type="number" name="adult" value="2">
+        </div>
 
-        <label>
-          Дети:
-          <input type="number" name="children" value="0">
-        </label>
+        <div>
+          <label for="children">Дети:</label>
+          <input id="children" type="number" name="children" value="0">
+        </div>
 
         <input type="submit" value="Найти">
       </form>
