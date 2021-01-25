@@ -29,16 +29,16 @@
           <legend>Инфраструктура:</legend>
           <ul>
             <li>
-              <label for="filter_swimming_pool">Бассейн</label>
               <input id="filter_swimming_pool" type="checkbox" name="swimming_pool" checked> 
+              <label for="filter_swimming_pool">Бассейн</label>
             </li>
             <li>
-              <label for="filter_parking">Парковка</label>
               <input id="filter_parking" type="checkbox" name="parking">
+              <label for="filter_parking">Парковка</label>
             </li>
             <li>
-              <label for="filter_WI-FI">WI-FI</label>
               <input id="filter_WI-FI" type="checkbox" name="WI-FI">
+              <label for="filter_WI-FI">WI-FI</label>
             </li>
           </ul>
         </fieldset>
@@ -46,27 +46,37 @@
           <legend>Тип жилья:</legend>
           <ul>
             <li>
-              <label for="filter_hotel">Гостиница</label>
               <input id="filter_hotel" type="checkbox" name="hotel" checked> 
+              <label for="filter_hotel">Гостиница</label>
             </li>
             <li>
-              <label for="filter_motel">Мотель</label>
               <input id="filter_motel" type="checkbox" name="motel" checked>
+              <label for="filter_motel">Мотель</label>
             </li>
             <li>
-              <label for="filter_apartments">Апартаменты</label>
               <input id="filter_apartments" type="checkbox" name="apartments" checked>
+              <label for="filter_apartments">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <div>
-            <span>От 0</span>
-            <span>До 3000</span>
+            <label>
+             От
+              <input type="text" name="from" value="0">
+            </label>
+            <label>
+              До 
+              <input type="text" name="to" value="3000">
+            </label>
           </div>
           <div>
-            <input type="range" min="0" max="3000">
+            <button type="button">Ползунок от</button>
+            <div>
+              <!-- Здесь будет полоска -->
+            </div>
+            <button type="button">Ползунок до</button>
           </div>
         </fieldset>
         <button type="submit">Показать</button>
@@ -95,8 +105,8 @@
           </ul>
         </div>
         <div>
-          <button type="button">По возрастанию</button>
-          <button type="button">По убыванию</button>
+          <a href="#">По возрастанию</a>
+          <a href="#">По убыванию</a>
         </div>
       </div>
       <ul>
