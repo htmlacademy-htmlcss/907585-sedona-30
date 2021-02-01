@@ -1,0 +1,360 @@
+/* Variables */
+
+:root {
+  --text-black: #000000;
+  --text-white: #FFFFFF;
+  --text-dark-grey: #333333;
+  --text-grey: #666666;
+  --text-blue: #81B3D2;
+  --text-brown: #766357;
+  --background-white: #FFFFFF;
+  --background-blue: #81B3D2;
+  --background-grey: #EEEEEE;
+  --background-brown: #766357;
+  --background-lightgrey: #F2F2F2;
+  --background-trans: rgba(255, 255, 255, 0.9);
+  --checkbox-grey: #6A6A6A;
+  --button-blue-hover: #669EC0;
+  --button-blue-active: #5496BD;
+  --button-brown-hover: #604E43;
+  --button-brown-active: #503E33;
+  --button-text-active: rgba(255, 255, 255, 0.3);
+  --link-text: rgba(0, 0, 0, 0.3);
+  --input-grey: #F2F2F2;
+  --input-grey-hover: #EBEBEB;
+  --input-grey-border-focus: #E5E5E5;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 1200px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--text-dark-grey);
+  text-transform: uppercase;
+  background-color: var(--background-white);
+}
+
+.main-header {
+  background-color: var(--background-white);
+}
+
+.main-footer {
+  background-color: var(--background-trans);
+}
+
+.blue-button {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--text-white);
+  background: var(--background-blue);
+}
+
+.blue-button:hover {
+  background-color: var(--button-blue-hover);
+}
+
+.blue-button:active {
+  background-color: var(--button-blue-active);
+  color: var(--button-text-active);
+}
+
+.brown-button {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--text-white);
+  background: var(--background-brown);
+}
+
+.brown-button:hover {
+  background-color: var(--button-brown-hover);
+}
+
+.brown-button:active {
+  background-color: var(--button-brown-active);
+  color: var(--button-text-active);
+}
+
+/* Navagation */
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--text-black);
+}
+
+.navigation-link:hover {
+  color: var(--text-blue);
+}
+
+.navigation-link:active {
+  color: var(--text-black);
+  opacity: 0.3;
+}
+
+.navigation-link-current {
+  color: var(--text-brown);
+}
+
+/* Title block */
+
+.title-image {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-color: var(--background-blue);
+  width: 100%;
+}
+
+.title-description {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: var(--text-black);
+}
+
+/* Reasons block */
+
+.reasons-list {
+  list-style: none;
+}
+
+.reasons-text {
+  background-color: var(--background-blue);
+  color: var(--text-white);
+  text-align: center;
+}
+
+.reasons-title {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.reasons-sublist {
+  list-style: none;
+}
+
+.reasons-sublist-item {
+  text-align: center;
+}
+
+.reasons-sublist-title {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--text-black);
+}
+
+.reasons-item {
+  background-color: var(--background-grey);
+  text-align: center;
+}
+
+.reasons-item-title {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--text-black);
+  line-height: 21px;
+}
+
+
+/* Hotel Search */
+
+.hotel-search {
+  text-align: center;
+}
+
+.hotel-search-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--text-black);
+}
+
+.hotel-search-text {
+  line-height: 24px;
+}
+
+.search-button {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.search-item {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-black);
+}
+
+.search-input {
+  font: inherit;
+  text-transform: uppercase;
+  background-color: var(--input-grey);
+  border: none;
+  outline: none;
+}
+
+.search-input:hover {
+  background-color: var(--input-grey-hover);
+}
+
+.search-input:focus {
+  background-color: var(--background-white);
+  border: 2px solid var(--input-grey-border-focus);
+}
+
+.find-button {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+/* Search filters */
+
+.search-filters-image {
+  background-image: url(../img/background-catalog.jpg);
+  background-repeat: no-repeat;
+  background-color: var(--background-blue);
+  background-size: cover;
+}
+
+.filter-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-white);
+}
+
+.filters-list {
+  list-style: none;
+}
+
+.filters-item {
+  color: var(--text-white);
+}
+
+.input-wrapper {
+  border: 2px solid var(--text-white);
+  border-radius: 2px;
+}
+
+.filter-input-lable {
+  color: var(--text-white);
+}
+
+.filter-input {
+  background-color: transparent;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+.filter-input-lable:first-child {
+  border-right: 2px solid var(--text-white);
+}
+
+.filters-button {
+  background-color: transparent;
+  border: 2px solid var(--text-white);
+  border-radius: 2px;
+  font: inherit;
+  color: var(--text-white);
+  text-transform: uppercase;
+}
+
+.filters-button:hover {
+  background-color: var(--background-white);
+  color: var(--text-black);
+}
+
+/* Search Results */
+
+.results-count {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--text-black);
+}
+
+.sort {
+  font-size: 12px;
+  color: var(--text-black);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-link {
+  text-decoration: none;
+  color: var(--link-text);
+  border-bottom: 1px dashed var(--text-blue);
+}
+
+.sort-link-current {
+  color: var(--text-blue);
+  border: none;
+}
+
+.sort-link:hover {
+  color: var(--text-blue);
+}
+
+.sort-link:active {
+  color: var(--text-black);
+  border: none;
+}
+
+.results-list {
+  list-style: none;
+}
+
+.hotel-name {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--text-black);
+  text-decoration: none;
+}
+
+.hotel-name:hover {
+  color: var(--text-blue);
+}
+
+.hotel-name:active {
+  color: var(--link-text);
+}
+
+.hotel-button {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.rating {
+  color: var(--text-grey);
+  background-color: var(--background-lightgrey);
+}
+/* Contacts */
+
+.contacts {
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--text-black);
+  text-align: center;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.socials-list {
+  list-style: none;
+}
+
+.copyright {
+  color: var(--text-black);
+}
