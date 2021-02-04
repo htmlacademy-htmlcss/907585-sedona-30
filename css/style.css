@@ -289,6 +289,8 @@
 
 .filters-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filters-item {
@@ -344,6 +346,8 @@
 
 .sort-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sort-link {
@@ -368,6 +372,22 @@
 
 .results-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.results-item {
+  display: flex;
+}
+
+.hotel-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 6px;
+}
+
+.hotel-image {
+  margin-right: 29px;
 }
 
 .hotel-name {
@@ -375,6 +395,7 @@
   font-size: 21px;
   color: var(--text-black);
   text-decoration: none;
+  grid-column: 1/-1;
 }
 
 .hotel-name:hover {
@@ -393,6 +414,10 @@
 .rating {
   color: var(--text-grey);
   background-color: var(--background-lightgrey);
+}
+
+.rating-wrapper {
+  margin-left: auto;
 }
 /* Contacts */
 
