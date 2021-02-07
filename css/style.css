@@ -94,14 +94,40 @@
 
 /* Navagation */
 
+.navigation {
+  position: relative;
+}
+
+.header-logo {
+  width: 138px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
+}
+
 .navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 73px;
 }
 
 .navigation-link {
   text-decoration: none;
   font-weight: 700;
   color: var(--text-black);
+}
+
+.navigation-list li:nth-child(2) {
+  margin-right: 92px;
+}
+
+.navigation-list li:nth-child(3) {
+  margin-left: 92px;
 }
 
 .navigation-link:hover {
@@ -124,6 +150,14 @@
   background-repeat: no-repeat;
   background-color: var(--background-blue);
   width: 100%;
+  padding-top: 77px;
+  padding-bottom: 80px;
+  margin-bottom: 42px;
+}
+
+.title-image img {
+  display: block;
+  margin: 0 auto;
 }
 
 .title-description {
@@ -134,12 +168,15 @@
   color: var(--text-black);
   width: 470px;
   margin: 0 auto;
+  margin-bottom: 44px;
 }
 
 /* Reasons block */
 
 .reasons-description {
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 51px;
 }
 
 .reasons-list {
@@ -161,17 +198,31 @@
   background-color: var(--background-blue);
   color: var(--text-white);
   text-align: center;
-
+  padding: 50px;
   grid-column: 1/2;
 }
 
 .reasons-title {
   font-weight: 700;
   font-size: 21px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.reasons-number {
+  margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.reasons-content {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .reasons-image {
   grid-column: 2/-1;
+  width: 800px;
+  height: 256px;
 }
 
 .reasons-sublist {
@@ -186,12 +237,19 @@
 .reasons-sublist-item {
   text-align: center;
   width: 33.3%;
+  padding: 60px 60px 80px;
 }
 
 .reasons-sublist-title {
   font-weight: 700;
   font-size: 21px;
   color: var(--text-black);
+  margin-top: 28px;
+  margin-bottom: 25px;
+}
+
+.reasons-sublist-item p {
+  margin: 0;
 }
 
 .reasons-second-item {
@@ -211,6 +269,7 @@
 .reasons-item {
   background-color: var(--background-grey);
   text-align: center;
+  padding: 50px;
 }
 
 .reasons-item-title {
@@ -218,6 +277,8 @@
   font-size: 21px;
   color: var(--text-black);
   line-height: 21px;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 
@@ -225,6 +286,7 @@
 
 .hotel-search {
   text-align: center;
+  padding-top: 58px;
 }
 
 .hotel-search-title {
@@ -232,22 +294,45 @@
   font-size: 30px;
   line-height: 24px;
   color: var(--text-black);
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hotel-search-text {
   line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
 
 .search-button {
+  display: inline-block;
+  width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-decoration: none;
   font-weight: 700;
   font-size: 21px;
+}
+
+.search-form {
+  width: 568px;
+  padding: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .search-item {
   font-weight: 700;
   font-size: 14px;
   color: var(--text-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-item-wide {
+  grid-column: 1/-1;
 }
 
 .search-input {
@@ -256,6 +341,10 @@
   background-color: var(--input-grey);
   border: none;
   outline: none;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .search-input:hover {
@@ -267,9 +356,29 @@
   border: 2px solid var(--input-grey-border-focus);
 }
 
+.input-wrapper .search-input {
+  width: 346px;
+}
+
+.count-wrapper {
+  display: flex;
+}
+
+.count-button {
+  width: 38px;
+  height: 38px;
+  background-color: var(--input-grey);
+  border: none;
+}
+
 .find-button {
   font-weight: 700;
   font-size: 21px;
+  grid-column: 1/-1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 24px;
+  border: none;
 }
 
 /* Search filters */
@@ -421,6 +530,11 @@
 }
 /* Contacts */
 
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts {
   font-weight: 700;
   font-size: 21px;
@@ -435,8 +549,28 @@
 
 .socials-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.socials-list a {
+  text-decoration: none;
+  display: block;
+  width: 46px;
+  height: 48px;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 .copyright {
   color: var(--text-black);
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.copyright a {
+  margin-left: 8px;
 }
