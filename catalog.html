@@ -30,10 +30,10 @@
 
   <main>
     <div class="container">
-      <h1>Поиск гостиницы</h1>
+      <h1 class="visually-hidden">Поиск гостиницы</h1>
 
       <section class="search-filters-wrapper">
-        <h2>Фильтры поиска</h2>
+        <h2 class="visually-hidden">Фильтры поиска</h2>
         <div class="search-filters-image">
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
             <fieldset>
@@ -89,16 +89,17 @@
                 </div>
                 <button type="button">Ползунок до</button>
               </div>
+              <button class="filters-button" type="submit">Показать</button>
             </fieldset>
-            <button class="filters-button" type="submit">Показать</button>
+
           </form>
         </div>
       </section>
 
       <section class="search-results-wrapper">
-        <h2>Результаты поиска</h2>
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="results-header">
-          <h3>Сортировка</h3>
+          <h3 class="visually-hidden">Сортировка</h3>
           <div class="results-count">
             Найдено:3
           </div>
@@ -132,10 +133,12 @@
               <a class="hotel-button brown-button" href="#">Забронировать</a>
             </div>
             <div class="rating-wrapper">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              <div class="rating-stars">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              </div>
               <span class="rating">Рейтинг: 8.5</span>
             </div>
           </li>
@@ -149,9 +152,11 @@
               <a class="hotel-button brown-button" href="#">Забронировать</a>
             </div>
             <div class="rating-wrapper">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              <div class="rating-stars">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              </div>
               <span class="rating">Рейтинг: 8.9</span>
             </div>
           </li>
@@ -165,8 +170,10 @@
               <a class="hotel-button brown-button" href="#">Забронировать</a>
             </div>
             <div class="rating-wrapper">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-              <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              <div class="rating-stars">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              </div>
               <span class="rating">Рейтинг: 9.2</span>
             </div>
           </li>
@@ -179,13 +186,13 @@
     <div class="container">
 
       <section class="contacts">
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <p>#visitsedona</p>
         <p>Тел: <a class="contacts-link" href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </section>
 
       <section class="socials">
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="socials-list">
           <li>
             <a class="blue-button" href="#">Твиттер</a>
