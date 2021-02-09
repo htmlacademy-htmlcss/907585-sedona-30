@@ -628,7 +628,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 120px;
-  padding: 23px 138px 36px 111px;
+  padding: 23px 73px 36px;
 }
 
 .contacts {
@@ -636,6 +636,7 @@
   font-size: 21px;
   color: var(--text-black);
   text-align: center;
+  width: 330px;
 }
 
 .contacts p {
@@ -670,9 +671,11 @@
 .copyright {
   color: var(--text-black);
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 0;
   margin-bottom: 0;
+  width: 330px;
 }
 
 .copyright a {
