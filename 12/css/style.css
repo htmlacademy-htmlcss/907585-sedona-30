@@ -37,29 +37,25 @@
 
 .page {
   height: 100%;
+  background-color: var(--background-lightgrey);
 }
 
 .page-body {
-  min-width: 1200px;
+  width: 1200px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: var(--text-dark-grey);
   text-transform: uppercase;
-  background-color: var(--background-lightgrey);
+  margin: 0 auto;
+  background-color: var(--background-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  background-color: var(--background-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main-header {
@@ -103,7 +99,6 @@
 }
 
 .visually-hidden {
-  visibility: hidden;
   position: absolute;
   width: 1px;
   height: 1px;
@@ -616,7 +611,7 @@
 .range-controls .toggle {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   left: 0;
   width: 4px;
   height: 4px;
