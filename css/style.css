@@ -133,7 +133,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 50%;
-  padding: 15px 68px;
+  padding: 17px 68px;
 }
 
 .navigation-list-left {
@@ -173,7 +173,7 @@
   background-size: cover;
   background-color: var(--background-blue);
   width: 100%;
-  padding-top: 80px;
+  padding-top: 76px;
   padding-bottom: 82px;
   margin-bottom: 42px;
   position: relative;
@@ -274,7 +274,7 @@
 .reasons-sublist-item {
   text-align: center;
   width: 33.3%;
-  padding: 60px 60px 81px;
+  padding: 60px 50px 81px;
 }
 
 .reasons-sublist-title {
@@ -312,8 +312,7 @@
 .reasons-item {
   background-color: var(--background-grey);
   text-align: center;
-  padding: 50px;
-  padding-bottom: 54px;
+  padding: 50px 65px 54px;
 }
 
 .reasons-item-title {
@@ -811,10 +810,10 @@
 .main-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   min-height: 120px;
   width: 100%;
-  padding: 23px 73px 47px;
+  padding: 24px 73px 47px;
 }
 
 .main-footer-transparent {
@@ -830,6 +829,7 @@
   color: var(--text-black);
   text-align: center;
   width: 330px;
+  margin-bottom: 5px;
 }
 
 .contacts p {
