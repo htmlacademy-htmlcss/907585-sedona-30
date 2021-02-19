@@ -249,6 +249,11 @@
   margin-bottom: 23px;
 }
 
+.reasons-number::before,
+.reasons-number::after {
+  content: " — ";
+}
+
 .reasons-content {
   margin-top: 0;
   margin-bottom: 0;
@@ -494,7 +499,8 @@
   background-repeat: no-repeat;
   background-color: var(--background-blue);
   background-size: cover;
-  padding: 30px 70px;
+  padding: 26px 71px;
+  padding-bottom: 34px;
 }
 
 .filters-form {
@@ -582,7 +588,7 @@
   border: 2px solid var(--text-white);
   border-radius: 2px;
   display: flex;
-  margin-top: 10px;
+  margin-top: 11px;
   margin-bottom: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -621,7 +627,7 @@
 
 .range-controls .bar {
   height: 2px;
-  width: 80%;
+  width: 100%;
   background-color: var(--background-white);
 }
 
@@ -640,8 +646,12 @@
   box-shadow: 0 2px 1px 0 var(--text-lightgrey);
 }
 
+.range-controls .toggle-min {
+  left: 0;
+}
+
 .range-controls .toggle-max {
-  left: 80%;
+  left: 82%;
 }
 
 .range-controls .toggle:hover {
@@ -672,7 +682,8 @@
 
 .results-header {
   display: flex;
-  padding: 30px 70px;
+  padding: 30px 71px;
+
   border-bottom: 1px solid var(--border-grey);
 }
 
@@ -680,7 +691,7 @@
   font-weight: 700;
   font-size: 21px;
   color: var(--text-black);
-  margin-right: 45px;
+  margin-right: 46px;
 }
 
 .sort {
@@ -695,11 +706,15 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 40px;
+  margin-left: 14px;
 }
 
 .sort-list li {
   margin-left: 30px;
+}
+
+.sort-list li:last-child {
+  margin-left: 34px;
 }
 
 .sort-link {
@@ -724,6 +739,7 @@
 
 .sort-direction {
   margin-left: auto;
+  padding-top: 5px;
 }
 
 .sort-direction a {
@@ -748,8 +764,9 @@
 
 .results-item {
   display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--border-grey);
-  padding: 30px 70px;
+  padding: 26px 72px 32px;
 }
 
 .hotel-wrapper {
@@ -769,7 +786,7 @@
   color: var(--text-black);
   text-decoration: none;
   grid-column: 1/-1;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 
 .hotel-name:hover {
@@ -783,13 +800,14 @@
 .hotel-button {
   font-weight: 700;
   text-decoration: none;
-  padding: 3px 15px;
+  padding: 3px 18px;
   margin-top: 15px;
 }
 
 .rating-wrapper {
   margin-left: auto;
   display: flex;
+  align-self: stretch;
   flex-direction: column;
 }
 
