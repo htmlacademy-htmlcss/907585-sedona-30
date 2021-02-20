@@ -359,7 +359,7 @@
 }
 
 .search-button {
-  display: inline-block;
+  display: block;
   min-width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -490,6 +490,10 @@
 
 .map iframe {
   border: none;
+}
+
+.map {
+  background-color: var(--background-grey);
 }
 
 /* Search filters */
