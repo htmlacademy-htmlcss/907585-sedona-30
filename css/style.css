@@ -562,6 +562,10 @@
   border-radius: 2px;
 }
 
+.filters-item input:focus + label {
+  outline: 2px solid var(--text-black);
+}
+
 .filters-item input:checked + label::before {
   width: 27px;
   background-image: url(../img/icons/icon_checkbox_on.svg);
@@ -695,7 +699,7 @@
   font-weight: 700;
   font-size: 21px;
   color: var(--text-black);
-  margin-right: 46px;
+  margin-right: 47px;
 }
 
 .sort {
@@ -773,11 +777,15 @@
   padding: 26px 72px 32px;
 }
 
+.results-item:last-of-type {
+  padding-bottom: 31px;
+}
+
 .hotel-wrapper {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: min-content min-content min-content;
-  column-gap: 6px;
+  column-gap: 4px;
 }
 
 .hotel-image {
