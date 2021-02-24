@@ -360,6 +360,8 @@
 
 .search-button {
   display: block;
+  position: relative;
+  z-index: 1;
   min-width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -377,6 +379,11 @@
   background-color: var(--background-white);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  animation: bounce 0.6s;
+}
+
+.search-form-hidden {
+  display: none;
 }
 
 .search-item {
@@ -941,4 +948,16 @@
 
 .copyright-link:active path {
   fill: var(--text-lightgrey);
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
