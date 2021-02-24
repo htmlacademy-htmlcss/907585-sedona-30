@@ -33,12 +33,16 @@ searchButton.addEventListener("click", function(event) {
     arrivalDate.focus();
   } else {
     searchForm.classList.add("search-form-hidden");
+    searchForm.classList.remove("search-form-error");
   }
 })
 
 searchForm.addEventListener("submit", function(event) {
   if (!arrivalDate.value || !depatureDate.value || !adult.value) {
     event.preventDefault();
+    searchForm.classList.remove("search-form-error");
+    searchForm.offsetWidth = searchForm.offsetWidth;
+    searchForm.classList.add("search-form-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("adult", adult.value);
@@ -52,6 +56,7 @@ window.addEventListener("keydown", function (event) {
     if (!searchForm.classList.contains("search-form-hidden")) {
       event.preventDefault();
       searchForm.classList.add("search-form-hidden");
+      searchForm.classList.remove("search-form-error");
     }
   }
 })
