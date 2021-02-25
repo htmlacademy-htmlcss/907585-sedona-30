@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
@@ -84,8 +84,8 @@
                 <div class="scale">
                   <div class="bar" style="width: 82%; margin-left: 0%"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" style="left:3%"></div>
-                <div class="toggle toggle-max" tabindex="0" style="left:82%"></div>
+                <div class="toggle toggle-min" tabindex="0" style="left:3%" aria-label="Задать минимальную цену"></div>
+                <div class="toggle toggle-max" tabindex="0" style="left:82%" aria-label="Задать максимальную цену"></div>
               </div>
               <button class="filters-button" type="submit">Показать</button>
             </fieldset>
@@ -133,13 +133,15 @@
             <img class="hotel-image" src="img/hotel_1.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & Spa">
             <div class="hotel-wrapper">
               <a class="hotel-name" href="#">Amara Resort & Spa</a>
-              <span>Гостиница</span>
-              <span>От 4000 р.</span>
-              <a class="hotel-button blue-button" href="#">Подробнее</a>
-              <a class="hotel-button brown-button" href="#">Забронировать</a>
+              <div class="hotel-buttons">
+                <span>Гостиница</span>
+                <span>От 4000 р.</span>
+                <a class="hotel-button blue-button" href="#">Подробнее</a>
+                <a class="hotel-button brown-button" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="rating-wrapper">
-              <div class="rating-stars">
+              <div class="rating-stars" aria-label="Количество звёзд">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
@@ -152,13 +154,15 @@
             <img class="hotel-image" src="img/hotel_2.jpg" width="135" height="90" alt="Фото гостиницы Desert Quail Inn">
             <div class="hotel-wrapper">
               <a class="hotel-name" href="#">Desert Quail Inn</a>
-              <span>Мотель</span>
-              <span>От 3000 р.</span>
-              <a class="hotel-button blue-button" href="#">Подробнее</a>
-              <a class="hotel-button brown-button" href="#">Забронировать</a>
+              <div class="hotel-buttons">
+                <span>Мотель</span>
+                <span>От 3000 р.</span>
+                <a class="hotel-button blue-button" href="#">Подробнее</a>
+                <a class="hotel-button brown-button" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="rating-wrapper">
-              <div class="rating-stars">
+              <div class="rating-stars" aria-label="Количество звёзд">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
@@ -170,13 +174,15 @@
             <img class="hotel-image" src="img/hotel_3.jpg" width="135" height="90" alt="Фото гостиницы Villas at Poco Diablo">
             <div class="hotel-wrapper">
               <a class="hotel-name" href="#">Villas at Poco Diablo</a>
-              <span>Апартаменты</span>
-              <span>От 2000 р.</span>
-              <a class="hotel-button blue-button" href="#">Подробнее</a>
-              <a class="hotel-button brown-button" href="#">Забронировать</a>
+              <div class="hotel-buttons">
+                <span>Апартаменты</span>
+                <span>От 2000 р.</span>
+                <a class="hotel-button blue-button" href="#">Подробнее</a>
+                <a class="hotel-button brown-button" href="#">Забронировать</a>
+              </div>
             </div>
             <div class="rating-wrapper">
-              <div class="rating-stars">
+              <div class="rating-stars" aria-label="Количество звёзд">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
                 <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
               </div>

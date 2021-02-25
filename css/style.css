@@ -476,6 +476,7 @@
 
 .count-wrapper .search-input {
   text-align: center;
+  -moz-appearance:textfield;
 }
 
 .count-button {
@@ -504,6 +505,8 @@
 }
 
 .map {
+  background-image: url(../img/map.jpg);
+  background-size: cover;
   background-color: var(--background-grey);
 }
 
@@ -628,6 +631,7 @@
   color: inherit;
   width: 45%;
   margin-left: 5px;
+  -moz-appearance:textfield;
 }
 
 .filter-input-lable:first-child {
@@ -663,6 +667,7 @@
   border-radius: 50%;
   box-sizing: content-box;
   box-shadow: 0 2px 1px 0 var(--text-lightgrey);
+  cursor: grab;
 }
 
 .range-controls .toggle-min {
@@ -793,9 +798,15 @@
 }
 
 .hotel-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+}
+
+.hotel-buttons {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: min-content min-content min-content;
+  grid-template-rows: min-content min-content;
   column-gap: 4px;
 }
 
@@ -804,11 +815,11 @@
 }
 
 .hotel-name {
+  display: block;
   font-weight: 700;
   font-size: 21px;
   color: var(--text-black);
   text-decoration: none;
-  grid-column: 1/-1;
   margin-bottom: 9px;
 }
 
