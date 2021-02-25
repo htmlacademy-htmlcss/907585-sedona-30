@@ -1,7 +1,7 @@
 const searchButton = document.querySelector(".search-button");
 const searchForm = document.querySelector(".search-form");
 const arrivalDate = searchForm.querySelector("#arrival_date");
-const depatureDate = searchForm.querySelector("#depature-date");
+const depatureDate = searchForm.querySelector("#depature_date");
 const adult = searchForm.querySelector("#adult");
 const children = searchForm.querySelector("#children");
 
