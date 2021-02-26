@@ -71,11 +71,11 @@
               <div class="price-controls">
                 <label class="filter-input-lable">
                   От
-                  <input class="filter-input" type="number" name="min-price" value="0">
+                  <input class="filter-input" type="number" name="min-price" value="0" min="0">
                 </label>
                 <label class="filter-input-lable">
                   До
-                  <input class="filter-input" type="number" name="max-price" value="3000">
+                  <input class="filter-input" type="number" name="max-price" value="3000" min="0">
                 </label>
               </div>
               <div class="range-controls">
@@ -99,20 +99,18 @@
           <div class="results-count">
             Найдено: 3
           </div>
-          <div class="sort">
-            Сортировка:
-            <ul class="sort-list">
-              <li>
-                <a class="sort-link sort-link-current" href="#">По цене</a>
-              </li>
-              <li>
-                <a class="sort-link" href="#">По типу</a>
-              </li>
-              <li>
-                <a class="sort-link" href="#">По рейтингу</a>
-              </li>
-            </ul>
-          </div>
+          <span class="sort-title">Сортировка:</span>
+          <ul class="sort-list">
+            <li>
+              <a class="sort-link sort-link-current" href="#">По цене</a>
+            </li>
+            <li>
+              <a class="sort-link" href="#">По типу</a>
+            </li>
+            <li>
+              <a class="sort-link" href="#">По рейтингу</a>
+            </li>
+          </ul>
           <div class="sort-direction">
             <a class="sort-direction-link" href="#" aria-label="Сортировать по возрастанию">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,11 +137,11 @@
               </div>
             </div>
             <div class="rating-wrapper">
-              <div class="rating-stars" aria-label="Количество звёзд">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              <div class="rating-stars" aria-label="Отель 4 звезды">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
               </div>
               <span class="rating">Рейтинг: 8.5</span>
             </div>
@@ -160,10 +158,10 @@
               </div>
             </div>
             <div class="rating-wrapper">
-              <div class="rating-stars" aria-label="Количество звёзд">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              <div class="rating-stars" aria-label="Отель 3 звезды">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
               </div>
               <span class="rating">Рейтинг: 8.9</span>
             </div>
@@ -180,9 +178,9 @@
               </div>
             </div>
             <div class="rating-wrapper">
-              <div class="rating-stars" aria-label="Количество звёзд">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
-                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда">
+              <div class="rating-stars" aria-label="Отель 2 звезды">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
+                <img src="img/icons/star.svg" width="19" height="17" alt="Звезда" aria-hidden="true">
               </div>
               <span class="rating">Рейтинг: 9.2</span>
             </div>
